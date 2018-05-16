@@ -182,6 +182,12 @@ https://github.com/elastic/beats/compare/v6.2.3...v6.3.0[View commits]
 - Added logging of system info at Beat startup. {issue}5946[5946]
 - Do not log errors if X-Pack Monitoring is enabled but Elastisearch X-Pack is not. {pull}6627[6627]
 - Add rename processor. {pull}6292[6292]
+- Add IP-addresses and MAC-addresses to add_host_metadata. {pull}6878[6878]
+- Add a default seccomp (secure computing) filter on Linux that prohibits
+  execve, execveat, fork, and vfork syscalls. A custom policy can be configured. {issue}5213[5213]
+- Update Sarama to v1.16.0, adding better support for kafka 0.11, 1.0, and 1.1 {pull}7025[7025]
+- Ship fields.yml as part of the binary {pull}4834[4834]
+- Add Indexer indexing by pod uid. Enable pod uid metadata gathering in add_kubernetes_metadata. Extended Matcher log_path matching to support volume mounts {pull}7072[7072]
 
 *Filebeat*
 
